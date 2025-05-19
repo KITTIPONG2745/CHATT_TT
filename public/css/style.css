@@ -1,47 +1,55 @@
 body {
-    font-family: sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Instagram Sans', sans-serif; /* ใช้ฟอนต์ Instagram Sans ถ้ามี */
+    /* ถ้าไม่มี Instagram Sans สามารถใช้ฟอนต์ sans-serif อื่นๆ เช่น -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" */
+    margin: 0;
+    background-color: #fafafa; /* สีพื้นหลังอ่อน */
+    color: #262626; /* สีตัวอักษรเข้ม */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .chat-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dbdbdb; /* เส้นขอบ */
+    border-radius: 8px; /* ขอบมน */
     padding: 20px;
 }
 
 h2 {
-    color: #333;
+    color: #262626;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 1.5em; /* ขนาดตัวอักษร */
+    font-weight: 600; /* ความหนาของตัวอักษร */
 }
 
 #login input[type="text"] {
     width: calc(100% - 22px);
-    padding: 10px;
+    padding: 12px; /* เพิ่มขนาด padding */
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #dbdbdb;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 1em; /* ขนาดตัวอักษร */
 }
 
 #login button {
-    padding: 10px 15px;
-    background-color: #5cb85c;
+    padding: 12px 16px; /* เพิ่มขนาด padding */
+    background-color: #0095f6; /* สีฟ้าของ Instagram */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
+    font-size: 1em; /* ขนาดตัวอักษร */
+    font-weight: 600; /* ความหนาของตัวอักษร */
 }
 
 #login button:hover {
-    background-color: #4cae4c;
+    background-color: #0077c9; /* สีฟ้าเข้มขึ้นเมื่อ hover */
 }
 
 #messages {
@@ -54,8 +62,9 @@ h2 {
 }
 
 #messages li {
-    padding: 8px 12px;
-    border-bottom: 1px solid #eee;
+    padding: 10px 12px; /* เพิ่มขนาด padding */
+    border-bottom: 1px solid #efefef; /* เส้นขีดสีอ่อน */
+    font-size: 0.9em; /* ขนาดตัวอักษร */
 }
 
 #messages li:last-child {
@@ -63,8 +72,8 @@ h2 {
 }
 
 #messages strong {
-    font-weight: bold;
-    color: #007bff;
+    font-weight: 600; /* ความหนาของตัวอักษร */
+    color: #262626; /* สีดำ */
 }
 
 #form {
@@ -73,21 +82,24 @@ h2 {
 
 #form input[type="text"] {
     flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px; /* เพิ่มขนาด padding */
+    border: 1px solid #dbdbdb;
     border-radius: 4px 0 0 4px;
     box-sizing: border-box;
+    font-size: 1em; /* ขนาดตัวอักษร */
 }
 
 #form button {
-    padding: 10px 15px;
-    background-color: #007bff;
+    padding: 12px 16px; /* เพิ่มขนาด padding */
+    background-color: #0095f6; /* สีฟ้าของ Instagram */
     color: white;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
+    font-size: 1em; /* ขนาดตัวอักษร */
+    font-weight: 600; /* ความหนาของตัวอักษร */
 }
 
 #form button:hover {
-    background-color: #0056b3;
+    background-color: #0077c9; /* สีฟ้าเข้มขึ้นเมื่อ hover */
 }
