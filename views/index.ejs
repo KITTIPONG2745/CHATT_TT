@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-time Chat</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>💬 แชทเรียลไทม์</h2>
+        <div id="login">
+            <input id="nameInput" type="text" placeholder="ใส่ชื่อของคุณ">
+            <button onclick="joinChat()">เข้าสู่ห้องแชท</button>
+        </div>
+        <div id="chatArea" style="display: none;">
+            <ul id="messages"></ul>
+            <form id="form">
+                <input id="input" autocomplete="off" placeholder="พิมพ์ข้อความ...">
+                <button>ส่ง</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+</html>
